@@ -33,6 +33,8 @@ p {
   max-width: 300px;
   max-height: 200px;
   position: relative;
+  padding-top: 10px;
+  margin: 0 auto;
 }
 
 .center-span-img img{
@@ -42,15 +44,22 @@ p {
 .center-span-img h4{
   position: absolute;
   top: 100px;
+  width: 220px;
   color: white;
   font-weight: bold;
-  text-align: center;
-  background-color: yellow;
-  outline-width: 5px;
-  outline-color: black;
-  background-opacity: 0.1;
+  padding: 20px;
+  background-color: #ffeb3b;
+  transition: background-color 0.5s ease;
+  -webkit-transition: background-color 0.5s ease;
+  transition: width 2s;
+  -webkit-transition: width 2s;
+  -moz-transition: width 2s;
 }
 
+.center-span-img h4:hover{
+  background-color: #f57f17;
+  width: 300px;
+}
 
 .parallax-container {
   min-height: 380px;
