@@ -6,11 +6,12 @@
   <title>UWI MAPS</title>
 
   <!-- CSS  -->
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/animate.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-<div class="navbar-fixed">
+<div class="navbar-fixed wow flipInX">
   <nav id="navbar" role="navigation">
     <div class="nav-wrapper container">
     <img src="img/logo.jpg" class="logo">
@@ -50,7 +51,7 @@
     <div class="section">
 -->
       <!--   Icon Section   -->
-      <div class="row">
+      <div class="row wow slideInLeft" data-wow-delay="1s">
         <div class="col s3 m4">
           <div class="center-span-img">
               <img src="img/img1.png" class="center-span-img">
@@ -78,7 +79,7 @@
 
   <footer class="page-footer">
     <div class="container">
-      <div class="row">
+      <div class="row  wow slideInRight">
         <div class="col l6 s12">
           <h5 class="white-text">UWI MAPS</h5>
           <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. </p>
@@ -117,6 +118,10 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+   new WOW().init();
+  </script>
 
   </body>
 </html>
