@@ -16,10 +16,8 @@ nav .brand-logo {
 }
 
 .logo{
-  max-height: 150px;
-  max-width: 300px;
   border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
+  /*border-top-left-radius: 50%;*/
 }
 
 p {
@@ -51,16 +49,16 @@ p {
   font-weight: bold;
   padding: 20px;
   background-color: #EDC951;
-  transition: background-color 0.5s ease;
-  -webkit-transition: background-color 0.5s ease;
-  transition: width 2s;
+  transition: background-color 1.5s ease, width .5s;
+  -webkit-transition: background-color 1.5s ease, width .5s;
+  /*transition: width 2s;
   -webkit-transition: width 2s;
-  -moz-transition: width 2s;
+  -moz-transition: width 2s;*/
 }
 
 .center-span-img h4:hover{
   background-color: #f57f17;
-  width: 300px;
+  width: 285px;
 }
 
 .parallax-container {
@@ -95,6 +93,23 @@ p {
   background-size: cover;
 }
 
+
+#block{
+  background-color: #f0f2f1;
+}
+
+#block h4{
+  font-family: Verdana;
+  color: #CC333F;
+}
+
+#event-block{
+  border-radius: 100%;
+  margin-left: 10px;
+  text-align: center;
+  background-color: #CC333F;
+  color: white;
+}
 .icon-block {
   padding: 0 15px;
 }
@@ -103,3 +118,15 @@ footer.page-footer {
   margin: 0;
   background-color: #CC333F;
 }
+
+/*Gallery Page*/
+#gallery-banner .parallax-container {
+  background-image: url("../img/banner.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 200px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+
