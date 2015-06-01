@@ -9,13 +9,16 @@
   <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/animate.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <!-- bxSlider CSS file -->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<link href="css/jquery.bxslider.css" rel="stylesheet" />
 </head>
 <body>
 <div class="navbar-fixed wow flipInX">
   <nav id="navbar" role="navigation">
     <div class="nav-wrapper container">
     <img src="img/logo.jpg" class="logo responsive-img" style="height: 150px; width: 150px;">
-      <a id="logo-container" href="#" class="brand-logo">M.A.P.S</a>
+      <a id="logo-container" href="index.html" class="brand-logo">M.A.P.S</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">About Us</a></li>
       </ul>
@@ -43,11 +46,23 @@
     </div>
   </div>
   </div>
+<div class="section wow ">
+  <div class="container">
 
-<!--
+    <ul class="bxslider">
+      <li><img src="img/img1.png" /></li>
+      <li><img src="img/img2.jpg" /></li>
+      <li><img src="img/img3.jpg" /></li>
+    </ul>
 
+    <div id="bx-pager">
+      <a data-slide-index="0" href=""><img id="thumb_" src="img/img1.png" /></a>
+      <a data-slide-index="1" href=""><img id="thumb_" src="img/img2.jpg" /></a>
+      <a data-slide-index="2" href=""><img id="thumb_" src="img/img3.jpg" /></a>
+    </div>
 
-
+  </div>
+</div>
 
 
   <footer class="page-footer">
@@ -60,13 +75,7 @@
 
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
+          <h5 class="white-text">       </h5>
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Contact Us</h5>
@@ -86,13 +95,24 @@
 
 
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script src="js/wow.min.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
   <script>
    new WOW().init();
   </script>
-
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.bxslider').bxSlider({
+        pagerCustom: '#bx-pager',
+        controls: true,
+        auto: true,
+        minSlides: true,
+        maxSlides: true
+      });
+    });
+    </script>
   </body>
 </html>
