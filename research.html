@@ -3,13 +3,14 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>UWI MAPS</title>
+  <title>Research | UWI MAPS</title>
 
   <!-- CSS  -->
   <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/animate.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link rel="icon" type="image/jpg" href="img/logo.jpg">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 </head>
 <body>
@@ -55,87 +56,46 @@
   </div>
 
 
-  <div class="container">
+  <div class="container" id="block">
     <div class="section">
+      <h4>Student Research Projects</h4>
 
-      <!--   Icon Section   -->
-      <div class="row wow slideInLeft" data-wow-delay="1s">
-        <div class="col s12 m12 l4">
-          <div class="center-span-img">
-              <img src="img/img1.png" class="responsive-img">
-              <a href="research.html"><h4>RESEARCH</h4></a>
+      <!-- Section   -->
+      <div class="row">
+        <div class="col s12 m6 l6">
+          <div class="card small">
+            <div class="card-image">
+              <img src="img/re2.jpg">
+              <span class="card-title"></span>
+            </div>
+            <div class="card-content">
+              <p>Heun and confluent Heun equations and their applications in Physics</p>
+            </div>
+            <div class="card-action">
+              <a href="research-by-dominic-mills-howell.html">by Dominic Mills-Howell</a>
+            </div>
           </div>
         </div>
-        <div class="col s12 m12 l4">
-          <div class="center-span-img">
-              <img src="img/img2.jpg" class="responsive-img">
-              <a href="faculties.html"><h4>FACULTIES</h4></a>
-          </div>
-        </div>
-        <div class="col s12 m12 l4">
-          <div class="center-span-img">
-              <img src="img/img3.jpg" class="responsive-img">
-              <a href="activities.html"><h4>ACTIVITIES</h4></a>
+    
+        <div class="col s12 m6 l6">
+          <div class="card small">
+            <div class="card-image">
+              <img src="img/re1.jpg">
+              <span class="card-title"> </span>
+            </div>
+            <div class="card-content">
+              <p>To Investigate the Effects of Fingerprinting Techniques on DNA analysis</p>
+            </div>
+            <div class="card-action">
+              <a href="research-by-krystal-james.html">by Krystal James</a>
+            </div>
           </div>
         </div>
       </div>
+
+     
     </div>
   </div>
-
-<div class="container">
- <div class="section">
-  <div class="row" id="block">
-
-      <div class="col l4 s12 wow slideInLeft" data-wow-delay="1s" id="block">
-        <!-- Grey navigation panel -->
-        <h4>UPCOMING</h4>
-          <div class="row">
-            <div class="col s3" id="event-block">
-              <p>27 Aug</p>
-            </div>
-            <div class="col s8">
-              <p>General Orientation</p>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col s3" id="event-block">
-              <p>28 Aug</p>
-            </div>
-            <div class="col s8">
-              <p>Faculty Orientation</p>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col s3" id="event-block">
-              <p>10 Sep</p>
-            </div>
-            <div class="col s8">
-              <p>“Before You Begin” Workshop</p>
-            </div>
-          </div>
-      </div>
-
-      <div class="col l8 s12 wow slideInRight" data-wow-delay="0.75s" id="block">
-        <!-- Teal page content  -->
-        <h4>ABOUT US</h4>
-        <p>
-          The Mona Association of Postgraduate Students (M.A.P.S) comprises of postgraduate students from the various faculties and departments of the University of the West Indies (Mona) campus. The contributions postgraduate students make to the university and to the region are well-documented and undisputable.
-        </p>
-        <p>Our objectives are:</p>
-        <ul class="obj">
-          <li>To improve the awareness of postgraduate students in activities of M.A.P.S and the Guild of Students</li><br>
-          <li>To facilitate and develop the integration of postgraduate students of the various faculties and departments.</li><br>
-          <li>To cater to the enhancement of postgraduate students’ research and innovation through partnerships, student development, publication, etc.</li><br>
-          <li>To address the concerns of all postgraduate students by advocating for all issues to be resolved.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-
 
   <footer class="page-footer">
     <div class="container">
@@ -173,6 +133,13 @@
   <script src="js/wow.min.js"></script>
   <script>
    new WOW().init();
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $('.collapsible').collapsible({
+          accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+        });
+    });
   </script>
 
   </body>

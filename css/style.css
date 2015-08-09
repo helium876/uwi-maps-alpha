@@ -28,6 +28,22 @@ p {
   color: #26a69a;
 }
 
+.obj li{
+    list-style-type: disc;
+}
+.obj{
+  padding-left: 50px;
+}
+
+.obj1 li{
+  list-style-type: none;
+  font-style: italic;
+}
+
+.obj1{
+  padding-left: 30px;
+}
+
 
 .center-span-img{
   max-width: 300px;
@@ -91,6 +107,7 @@ p {
   background-image: url("../img/banner.jpg");
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 

@@ -10,6 +10,7 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/animate.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link rel="icon" type="image/jpg" href="img/logo.jpg">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 </head>
 <body>
@@ -55,87 +56,44 @@
   </div>
 
 
-  <div class="container">
+  <div class="container" id="block">
     <div class="section">
+      <h4>ACTIVITIES</h4>
+      <p>
+        Over the years the Mona Association of Postgraduate Students has served to provide postgraduate students at UWI Mona with a voice and an avenue to effect change in the university and the wider community. Revived in 2014 by president Nyron Beeput, M.A.P.S. provides a wealth of opportunities for postgraduate students to become more involved and engaged in university life.
+      </p>
 
-      <!--   Icon Section   -->
-      <div class="row wow slideInLeft" data-wow-delay="1s">
-        <div class="col s12 m12 l4">
-          <div class="center-span-img">
-              <img src="img/img1.png" class="responsive-img">
-              <a href="research.html"><h4>RESEARCH</h4></a>
-          </div>
-        </div>
-        <div class="col s12 m12 l4">
-          <div class="center-span-img">
-              <img src="img/img2.jpg" class="responsive-img">
-              <a href="faculties.html"><h4>FACULTIES</h4></a>
-          </div>
-        </div>
-        <div class="col s12 m12 l4">
-          <div class="center-span-img">
-              <img src="img/img3.jpg" class="responsive-img">
-              <a href="activities.html"><h4>ACTIVITIES</h4></a>
-          </div>
-        </div>
-      </div>
+      <!--   Collapse Section   -->
+      <ul class="collapsible" data-collapsible="accordion">
+        <li>
+          <div class="collapsible-header"><i class="large material-icons">label</i>Student Development</div>
+          <div class="collapsible-body"><p>M.A.P.S. hosts a series of seminars and workshops aimed at educating and developing postgraduate students academically, professionally and socially. These workshops help students through many of the tricky issues and processes that accompany being a postgraduate student. We also offer a Financial Assistance Programme through the Guild of Students specific to helping graduate students in need of assistance with funding their education.</p></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="large material-icons">label</i>Research & Innovation</div>
+          <div class="collapsible-body"><p>This year, we intend to focus on the partnership of research & innovation at the university with the outside community. We hope to publish an academic journal to showcase the research being conducted at the university, and to host a business mixer to provide networking opportunities for graduate students, and facilitate discussion between university students and staff and members of corporate Jamaica.</p></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="large material-icons">label</i>Outreach</div>
+          <div class="collapsible-body"><p>The HOPE project, which is a partnership with the Guild External Affairs Committee, is an outreach programme which targets students at the CSEC and GSAT level to provide with education and mentorship through tutoring. MAPS CARES is another outreach project in which we raise funds to assist the Mona Basic School with renovations and maintenance.</p></div>
+        </li>
+      </ul>
+
+      <h4>How to Get Involved?</h4>
+      <ul class="obj">
+        <li>Join one of our standing committees:</li>
+          <ul class="obj1">
+            <li>Fundraising</li>
+            <li>Advocacy</li>
+            <li>Outreach</li>
+            <li>Public Relations</li>
+            <li>Social & Events</li>
+          </ul>
+        <li>Attend our monthly meetings (time and place)</li>
+        <li>Come out to our events (see calendar)</li>
+      </ul>
     </div>
   </div>
-
-<div class="container">
- <div class="section">
-  <div class="row" id="block">
-
-      <div class="col l4 s12 wow slideInLeft" data-wow-delay="1s" id="block">
-        <!-- Grey navigation panel -->
-        <h4>UPCOMING</h4>
-          <div class="row">
-            <div class="col s3" id="event-block">
-              <p>27 Aug</p>
-            </div>
-            <div class="col s8">
-              <p>General Orientation</p>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col s3" id="event-block">
-              <p>28 Aug</p>
-            </div>
-            <div class="col s8">
-              <p>Faculty Orientation</p>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col s3" id="event-block">
-              <p>10 Sep</p>
-            </div>
-            <div class="col s8">
-              <p>“Before You Begin” Workshop</p>
-            </div>
-          </div>
-      </div>
-
-      <div class="col l8 s12 wow slideInRight" data-wow-delay="0.75s" id="block">
-        <!-- Teal page content  -->
-        <h4>ABOUT US</h4>
-        <p>
-          The Mona Association of Postgraduate Students (M.A.P.S) comprises of postgraduate students from the various faculties and departments of the University of the West Indies (Mona) campus. The contributions postgraduate students make to the university and to the region are well-documented and undisputable.
-        </p>
-        <p>Our objectives are:</p>
-        <ul class="obj">
-          <li>To improve the awareness of postgraduate students in activities of M.A.P.S and the Guild of Students</li><br>
-          <li>To facilitate and develop the integration of postgraduate students of the various faculties and departments.</li><br>
-          <li>To cater to the enhancement of postgraduate students’ research and innovation through partnerships, student development, publication, etc.</li><br>
-          <li>To address the concerns of all postgraduate students by advocating for all issues to be resolved.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-
 
   <footer class="page-footer">
     <div class="container">
@@ -173,6 +131,13 @@
   <script src="js/wow.min.js"></script>
   <script>
    new WOW().init();
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $('.collapsible').collapsible({
+          accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+        });
+    });
   </script>
 
   </body>
